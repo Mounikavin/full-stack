@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK</title>
+    <link rel="shortcut icon" href="https://w7.pngwing.com/pngs/36/68/png-transparent-project-management-computer-icons-task-task-text-logo-project-management-thumbnail.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+</head>
+<body>
+    <!-- header>(img+(ul>(li>a{item}*4)))*1 -->
+    <header>
+        <img src="https://w7.pngwing.com/pngs/36/68/png-transparent-project-management-computer-icons-task-task-text-logo-project-management-thumbnail.png"width="60px">
+    
+
+    <ul>
+        <li><a href="./Home.html">Home</a></li>
+        <li><a href="#">Task1</a></li>
+        <li><a href="./Task2.html">Task2</a></li>
+        <li><a href="./Task3.html">Task3</a></li>
+        <li><a href="./Task4.html">Task4</a></li>
+    </ul>
+</header>
+<center>
+    <fieldset> <legend><strong>ADD NUMBERS</strong></legend>
+        <label for="Input 1">Input 1</label>
+        <input type="number" name="Input 1" id="Input 1"> <pre></pre>
+        <label for="Input 2">Input 2</label>
+        <input type="number" name="Input 2" id="Input 2"><pre></pre>
+        <label for="Input 3">Input 3</label>
+        <input type="number" name="Input 3" id="Input 3"><pre></pre>
+         <button type="button" onclick="add()"> Total</button><pre></pre>
+        <div id="Result"></div>
+        </fieldset>
+    </center>
+       <script>
+         function add(){
+          Input1=document.getElementById('Input 1').value;
+          Input2=document.getElementById('Input 2').value;      
+          Input3=document.getElementById('Input 3').value;      
+          const sum= Number(Input1)+Number(Input2)+Number(Input3);
+           Result=document.getElementById('Result');
+           Result.innerText=`Result:${sum}`;
+         }
+       </script>
+    
+</body>
+</html>

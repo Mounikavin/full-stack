@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK</title>
+    <link rel="shortcut icon" href="https://w7.pngwing.com/pngs/36/68/png-transparent-project-management-computer-icons-task-task-text-logo-project-management-thumbnail.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+</head>
+<body>
+    <!-- header>(img+(ul>(li>a{item}*4)))*1 -->
+    <header>
+    <img src="https://w7.pngwing.com/pngs/36/68/png-transparent-project-management-computer-icons-task-task-text-logo-project-management-thumbnail.png" width="60px
+    ">
+
+    <ul>
+        <li><a href="./Home.html">Home</a></li>
+        <li><a href="./Task1.html">Task1</a></li>
+        <li><a href="Task2.html">Task2</a></li>
+        <li><a href="#">Task3</a></li>
+        <li><a href="./Task4.html">Task4</a></li>
+
+    </ul>
+</header>
+   <center>
+<fieldset> <legend><strong> CELSIUS CONVERTER</strong></legend>
+  <input type="number" id="fahrenheitInput" placeholder="Enter Fahrenheit">
+  <button onclick="convertToCelsius()">Convert</button>
+  <div id="Result"></div>
+</center>
+  <script>
+    function convertToCelsius() {
+      const fahrenheit=document.getElementById("fahrenheitInput").value;
+      if(fahrenheit === "") {
+        document.getElementById("Result").innerText = "Please enter a value.";
+        return;
+      }
+      const celsius = (parseFloat(fahrenheit) - 32) * 5 / 9;
+      document.getElementById("Result").innerText = 
+        `${fahrenheit}°F is ${celsius.toFixed(2)}°C`;
+    }
+  </script>
+</body>
+</html>
